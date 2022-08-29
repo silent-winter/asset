@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.buct.asset.mapper.AssetInfoMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.buct.asset.model.AssetInfo">
+        <id column="id" property="id" />
+        <result column="company" property="company" />
+        <result column="asset_id" property="assetId" />
+        <result column="asset_name" property="assetName" />
+        <result column="finance_asset_id" property="financeAssetId" />
+        <result column="finance_entry_time" property="financeEntryTime" />
+        <result column="asset_category" property="assetCategory" />
+        <result column="depreciation_category" property="depreciationCategory" />
+        <result column="depreciation_type" property="depreciationType" />
+        <result column="order_id" property="orderId" />
+        <result column="user" property="user" />
+        <result column="user_id" property="userId" />
+        <result column="store_location" property="storeLocation" />
+        <result column="amount" property="amount" />
+        <result column="funds_subject" property="fundsSubject" />
+        <result column="use_direction" property="useDirection" />
+        <result column="finance_entry_time_caiwu" property="financeEntryTimeCaiwu" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, company, asset_id, asset_name, finance_asset_id, finance_entry_time, finance_entry_time_caiwu, asset_category, depreciation_category, depreciation_type, order_id, user, user_id, store_location, amount, funds_subject, use_direction
+    </sql>
+
+</mapper>
